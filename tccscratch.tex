@@ -1,0 +1,84 @@
+\documentclass[12pt, openright, a4paper, brazil, openany, oneside]{abntex2}
+
+\usepackage{times}		
+\usepackage[T1]{fontenc}	
+\usepackage[utf8]{inputenc}	
+\usepackage{indentfirst}	
+\usepackage{color}			
+\usepackage{graphicx}		
+\usepackage{microtype} 		
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{lipsum}				
+\usepackage[brazilian,hyperpageref]{backref}
+
+\usepackage[num,overcite]{abntex2cite}
+\citebrackets()
+
+\newtheorem{teo}{Teorema}
+	 
+
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+
+\titulo{Uma bissetriz paralela aplicada na construção triangular}
+\autor{Sérgio Luís Soares Almeida \\ Matrícula 18/0006410}
+\local{Brasília}
+\data{14 de Novembro de 2018}
+\instituicao{%
+  Universidade de Brasília -- UnB
+  \par
+  Departamento de Matemática
+  \par
+ PROFMAT}
+\tipotrabalho{Estudo de Artigo}
+
+\definecolor{black}{RGB}{0.0,0.0,0.0}
+
+
+\makeatletter
+
+\preambulo{Estudo do artigo An Angle Bisector Parallel Applied to
+Triangle Construction publicado em 13 de julho de 2009 disponível no endereço http://forumgeom.fau.edu/FG2009volume9/FG200915.pdf}
+
+\hypersetup{pdftitle={\@title}, pdfauthor={\@author}, pdfsubject={\imprimirpreambulo}, pdfcreator={LaTeX with abnTeX2}, pdfkeywords={abnt}{latex}{abntex}{abntex2}{relatório técnico}, colorlinks=true, linkcolor=black, citecolor=black, filecolor=black, urlcolor=black, bookmarksdepth=4}
+\makeatother
+
+\setlength{\parindent}{1.3cm}
+
+
+\setlength{\parskip}{0.2cm}  
+
+
+\makeindex
+
+\begin{document}
+
+
+\selectlanguage{brazil}
+
+
+\frenchspacing 
+\imprimircapa
+\imprimirfolhaderosto*
+\ABNTEXchapterfont
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+\textual
+
+
+
+
+
+
+
+\end{document}
