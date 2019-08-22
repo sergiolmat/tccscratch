@@ -10,26 +10,15 @@
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage{lipsum}				
-\usepackage[brazilian,hyperpageref]{backref}
+
 
 \usepackage[small]{caption}
 
-\usepackage[num,overcite]{abntex2cite}
-\citebrackets()
+\usepackage[num]{abntex2cite}
+\citebrackets[]
 
 \newtheorem{teo}{Teorema}
 	 
-
-\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
-\renewcommand{\backref}{}
-\renewcommand*{\backrefalt}[4]{
-	\ifcase #1 %
-		Nenhuma citação no texto.%
-	\or
-		Citado na página #2.%
-	\else
-		Citado #1 vezes nas páginas #2.%
-	\fi}%
 
 \titulo{Usando o Scratch no ensino da Matemática através da programação}
 \autor{Sérgio Luís Soares Almeida \\ Matrícula 18/0006410}
