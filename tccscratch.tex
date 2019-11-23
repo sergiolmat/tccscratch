@@ -1,55 +1,266 @@
-\documentclass[12pt, openright, a4paper, brazil, openany, oneside]{abntex2}
+\documentclass[12pt, openright, a4paper, brazil, english, french, spanish, bibjustif, openany, oneside]{abntex2}
 
-\usepackage{times}		
+\usepackage{cmap}				% Mapear caracteres especiais no PDF
+\usepackage{ifthen}				% Mapear caracteres especiais no PDF
+\usepackage{setspace}				% Mapear caracteres especiais no PDF
+\usepackage{lmodern}		
 \usepackage[T1]{fontenc}	
-\usepackage[utf8]{inputenc}	
+\usepackage[utf8]{inputenc}
+\usepackage{lastpage}
+\usepackage{enumitem}	
 \usepackage{indentfirst}	
 \usepackage{color}			
-\usepackage{graphicx}		
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{enumerate}		
 \usepackage{microtype} 		
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage{lipsum}
 \usepackage{booktabs}				
+\usepackage{bold-extra}				% Mapear caracteres especiais no PDF
+\usepackage[final]{pdfpages}
 
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
 
 \usepackage[small]{caption}
 
-\usepackage[num]{abntex2cite}
-\citebrackets[]
 
 \newtheorem{teo}{Teorema}
 	 
+%
+%\titulo{Usando o Scratch como ferramenta interdisciplinar através da programação}
+%\autor{Sérgio Luís Soares Almeida \\ Matrícula 18/0006410}
+%\local{Brasília}
+%\data{2019}
+%\instituicao{%
+%  Universidade de Brasília -- UnB
+%  \par
+%  Departamento de Matemática
+%  \par
+% PROFMAT}
+%\tipotrabalho{Estudo de Artigo}
+
+%\definecolor{black}{RGB}{0.0,0.0,0.0}
+
+
+%\makeatletter
+
+%\preambulo{Scratch no ensino de Matemática}
+
+%\hypersetup{pdftitle={\@title}, pdfauthor={\@author}, pdfsubject={\imprimirpreambulo}, pdfcreator={LaTeX with abnTeX2}, pdfkeywords={abnt}{latex}{abntex}{abntex2}{relatório técnico}, colorlinks=true, linkcolor=black, citecolor=black, filecolor=black, urlcolor=black, bookmarksdepth=4}
+%\makeatother
+
+%\setlength{\parindent}{1.3cm}
+
+
+%\setlength{\parskip}{0.2cm}  
+
+
+%\makeindex
+
+%=============================================================================================
+%teste de apendice
+\renewcommand\appendixname{APÊNDICE}
+\renewcommand\appendixpagename{APÊNDICE}
+%=============================================================================================
+
+
+%informações do título
 
 \titulo{Usando o Scratch como ferramenta interdisciplinar através da programação}
-\autor{Sérgio Luís Soares Almeida \\ Matrícula 18/0006410}
+\autor{Sérgio Luís Soares Almeida}
 \local{Brasília}
-\data{2019}
+\data{\the\year}
+\orientador[Orientadora:]{Prof$^{\underline{a}}$. Dr$^{\underline{a}}$. Tatiane da Silva Evangelista}
+\coorientador{}
 \instituicao{%
-  Universidade de Brasília -- UnB
+  Universidade de Brasília - UnB
   \par
-  Departamento de Matemática
+  Departamento de Matemática - MAT
   \par
- PROFMAT}
-\tipotrabalho{Estudo de Artigo}
+  PROFMAT - SBM}
+\tipotrabalho{Dissertação de Mestrado}
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+\preambulo{Dissertação apresentada ao Departamento de Matemática da Universidade de Brasília, como parte dos requisitos do Programa de Mestrado Profissional em Matemática em Rede Nacional - PROFMAT, para obtenção do grau de Mestre.}
 
-\definecolor{black}{RGB}{0.0,0.0,0.0}
 
+%Novas configurações enviadas pelo Vinícius
 
 \makeatletter
-
-\preambulo{Scratch no ensino de Matemática}
-
-\hypersetup{pdftitle={\@title}, pdfauthor={\@author}, pdfsubject={\imprimirpreambulo}, pdfcreator={LaTeX with abnTeX2}, pdfkeywords={abnt}{latex}{abntex}{abntex2}{relatório técnico}, colorlinks=true, linkcolor=black, citecolor=black, filecolor=black, urlcolor=black, bookmarksdepth=4}
+\newcommand*{\textoverline}[1]{$\overline{\hbox{#1}}\m@th$}
 \makeatother
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
 
+\renewcommand{\imprimircapa}{%
+  \begin{capa}%
+    \center
+    \begin{minipage}[t][1cm][c]{0.2\textwidth}
+        \includegraphics[scale=0.6,keepaspectratio=true]{unb.png}
+    \end{minipage}
+    \begin{minipage}[t][1cm][c]{0.5\textwidth}
+        \begin{center}
+        Universidade de Brasília \\
+        Instituto de Ciências Exatas \\
+        Departamento de Matemática \\
+        Programa de Mestrado Profissional\\
+        em Matemática em Rede Nacional
+        \end{center}
+    \end{minipage}
+    \begin{minipage}[t][1cm][c]{0.2\textwidth}
+        \includegraphics[scale=0.6,keepaspectratio=true]{profmat.jpg}
+    \end{minipage}
+
+    \vspace*{1cm}
+
+    \vfill
+    \begin{center}
+    \ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
+    \end{center}
+    \vfill
+
+    {\ABNTEXchapterfont\large\imprimirautor}
+
+    \vspace*{2cm}
+
+    \large\imprimirlocal
+
+    \large\imprimirdata
+
+    \vspace*{1cm}
+  \end{capa}
+}
+
+\newcounter{obmepquestion}
+
+\newenvironment{enunciado}
+{
+    \stepcounter{obmepquestion}
+    \bfseries
+}
+{
+}
+
+\newenvironment{analise}[8]
+{
+    \vspace{0.2in}
+    \noindent
+    \begin{minipage}[c][4cm][c]{0.55\textwidth}
+        
+    \begin{small}
+    \begin{center}
+    \bfseries{\scshape{Análise do Item \arabic{obmepquestion}}}
+    \end{center}
+    \end{small}
+
+    \begin{tiny}
+    \begin{tabular}{cccccc}
+        \toprule
+        \rowcolor{blue!20}
+        Questão & Gabarito & Dificuldade & \multicolumn{2}{c}{Índice D} &
+            Bisserial \\
+        #1 & \multicolumn{2}{c}{#2} & #3 \\
+        \rowcolor{blue!20}
+        \multicolumn{3}{c}{Acerto: 27\% maiores notas} &
+        \multicolumn{3}{c}{Acerto: 27\% menores notas} \\
+        \multicolumn{3}{c}{#4} &
+        \multicolumn{3}{c}{#5} \\
+        \rowcolor{blue!20}
+        $r_b(A)$ & $r_b(B)$ & $r_b(C)$ & $r_b(D)$ & $r_b(E)$ & $r_b()$ \\ 
+        #6 \\
+        \rowcolor{blue!20}
+        $p(A)$ & $p(B)$ & $p(C)$ & $p(D)$ & $p(E)$ & $p()$ \\ 
+        #7 \\
+        \bottomrule
+    \end{tabular}
+    \end{tiny}
+    \end{minipage}
+    \begin{minipage}[c][4cm][c]{0.45\textwidth}
+        \includegraphics[scale=0.25,keepaspectratio=true]{#8}
+    \end{minipage}
+}
+{
+    \vspace{0.2in}
+}
+
+
+\newcommand{\alternativas}[6]
+{
+    \vspace{0.2in}
+    \noindent
+    \begin{minipage}[t][1cm][c]{0.5\textwidth}
+    \begin{flushleft}
+    \begin{enumerate}[itemsep=-2mm, label=\Alph*)]
+        \item #1
+        \item #2
+        \item #3
+        \item #4
+        \item #5
+    \end{enumerate}
+    \end{flushleft}
+    \end{minipage}
+    \begin{minipage}[t][1cm][c]{0.5\textwidth}
+    \ifthenelse{\equal{#6}{}}{}{
+        \includegraphics[scale=0.6,keepaspectratio=true]{#6}
+    }
+    \end{minipage}
+    \vspace{0.5in}
+}
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=black,          	% color of internal links
+    	citecolor=black,        		% color of links to bibliography
+    	filecolor=black,      		% color of file links
+		urlcolor=black,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
 \setlength{\parindent}{1.3cm}
 
-
-\setlength{\parskip}{0.2cm}  
-
-
-\makeindex
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
 
 \begin{document}
 
@@ -64,11 +275,172 @@
 \frenchspacing 
 \imprimircapa
 \imprimirfolhaderosto*
-\ABNTEXchapterfont
+
+%novos elementos do documento
+% FICHA CATALOGRÁFICA
+
+\begin{fichacatalografica}
+	\vspace*{\fill}					% Posição vertical
+	\hrule							% Linha horizontal
+	\begin{center}					% Minipage Centralizado
+	\begin{minipage}[c]{12.5cm}		% Largura
+
+	\imprimirautor
+	
+	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+	\imprimirlocal, \imprimirdata-
+	
+	\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
+	
+	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
+	
+	\hspace{0.5cm}
+	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
+	\imprimirdata.}\\
+	
+	\hspace{0.5cm}
+		1. Palavra Chave 1.
+		2. Palavra Chave 2.
+		I. Nome do Orientador.
+		II. Universidade de Brasília.
+		III. PROFMAT - SBM.
+		IV. Título XYZ\\ 			
+	
+	\hspace{8.75cm} ?CDU XYZ 02:141:005.7?\\
+	
+	\end{minipage}
+	\end{center}
+	\hrule
+\end{fichacatalografica}
+
+% FOLHA DE APROVAÇÃO
+
+\begin{folhadeaprovacao}
+
+\begin{center}
+ Universidade de Bras\'ilia \\
+ Instituto de Ci\^encias Exatas \\
+ Departamento de Matem\'atica
+\end{center}
+\begin{center}
+    \vspace{0.3cm}
+ \LARGE{\textbf{\imprimirtitulo}}
+    \vspace{0.3cm}
+\end{center}
+\begin{center}
+ por \\
+    \vspace{0.5cm}
+ \LARGE{\textbf{\imprimirautor}} *
+\end{center}
+
+    \vspace{0.5cm}
+\noindent Disserta\c c\~ao apresentada ao Departamento de Matem\'atica da Universidade de Bras\'ilia,
+como parte dos requisitos do ``Programa'' de Mestrado Profissional em Matem\'atica em Rede 
+Nacional - PROFMAT, para obten\c c\~ao do grau de 
+\begin{center}
+    \vspace{0.2cm}
+ \LARGE{\textbf{MESTRE}}\\
+    \vspace{0.5cm}
+ Bras\'ilia, 29 de maio de 2020
+\end{center}
+
+    \vspace{1.5cm}
+\noindent {Comiss\~ao Examinadora:}
+
+\vspace*{8mm}
+
+\textoverline{\phantom{xxxxxxx} \imprimirorientador - MAT/UnB (Orientadora)\phantom{xxxxxxx}  }
+
+\vspace*{1cm}
+
+\textoverline{\phantom{xxxxxxx} Prof. Dr. Membro 1 - MAT/UnB (Membro) \phantom{xxxxx} }
+
+\vspace*{1cm}
+
+\textoverline{\phantom{xxxxxxx} Prof. Dr. Membro 2 - SEEDF (Membro)\phantom{xxxxxxx}  }
+
+\vspace*{1cm}
+
+\vspace*{1cm}
+
+\end{folhadeaprovacao}
+
+%folha dedicatória
+
+\begin{dedicatoria}
+   \vspace*{\fill}
+   \centering
+   \noindent
+    \textit{Texto da dedicatória.}\vspace*{\fill}
+\end{dedicatoria}
+
+%folha agradecimentos
+
+\begin{agradecimentos}
+
+Texto do agradecimento.
+
+\end{agradecimentos}
+
+%folha epigrafe
+
+\begin{epigrafe}
+    \vspace*{\fill}
+	\begin{flushright}
+		\textit{\lq\lq Citação \rq\rq\\ Autor}
+	\end{flushright}
+\end{epigrafe}
+
+%folha resumo
+
+\begin{resumo}
+
+Texto do resumo.
+
+ \vspace{\onelineskip}
+    
+ \noindent
+ \textbf{Palavras-chaves}: palavras. chaves. separadas. por. pontos.
+\end{resumo}
+
+%folha abstract
+
+\begin{resumo}[Abstract]
+ \begin{otherlanguage*}{english}
+
+Texto do abstract.
+
+  \vspace{\onelineskip}
+ 
+   \noindent 
+ \textbf{Key-words}: palavras. chaves. separadas. por. pontos.
+ \end{otherlanguage*}
+\end{resumo}
+
+
+
+%novas configurações de capa e contracapa
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+
 \pdfbookmark[0]{\contentsname}{toc}
 \tableofcontents*
 \cleardoublepage
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
 \textual
+
+%\ABNTEXchapterfont
+%\pdfbookmark[0]{\contentsname}{toc}
+%\tableofcontents*
+%\cleardoublepage
+%\textual
 
 \chapter*[Introdução]{Introdução}
 \addcontentsline{toc}{chapter}{Introdução}
@@ -78,11 +450,11 @@ Fazer introdução
 
 \chapter{Pensamento Computacional}
 
-O termo \textit{``computational thinking''} (pensamento computacional) passou a ser mais discutido a partir do artigo de Jeannette M. Wing em 2006, onde afirma que ``o pensamento computacional baseia-se no poder e nos limites dos processos de computação, sejam eles executados por um ser humano ou por uma máquina''\cite{wing} (Wing, 2006). Ainda, segundo Wing:
+O termo \textit{``computational thinking''} (pensamento computacional) passou a ser mais discutido a partir do artigo de Jeannette M. Wing em 2006, onde afirma que ``o pensamento computacional baseia-se no poder e nos limites dos processos de computação, sejam eles executados por um ser humano ou por uma máquina''\cite{wing}. Ainda, segundo Wing:
 
 \begin{citacao}
 
-``O pensamento computacional é uma habilidade fundamental para todos, não apenas para cientistas das computação. À leitura, escrita e aritmética, devemos acrescentar o pensamento computacional à capacidade analítica de cada criança'' (Wing, 2006)
+``O pensamento computacional é uma habilidade fundamental para todos, não apenas para cientistas das computação. À leitura, escrita e aritmética, devemos acrescentar o pensamento computacional à capacidade analítica de cada criança'' \cite{wing}
 
 \end{citacao}
 
@@ -93,7 +465,7 @@ No entanto o termo pensamento computacional não é definido em termos precisos.
 
 \begin{citacao}
 
-``Os debates realizados no Workshop de fevereiro de 2009 não chegaram a um acordo geral entre os participantes sobre o conteúdo preciso de pensamento computacional, e muito menos a sua estrutura. No entanto, a falta de desacordo explícito sobre seus membros poderia ser entendida como refletindo uma intuição compartilhada entre os participantes do workshop que o pensamento computacional, como um modo de pensamento, tem o seu próprio caráter distintivo'' \cite{NRC} (USA National Research Council, 2010)
+``Os debates realizados no Workshop de fevereiro de 2009 não chegaram a um acordo geral entre os participantes sobre o conteúdo preciso de pensamento computacional, e muito menos a sua estrutura. No entanto, a falta de desacordo explícito sobre seus membros poderia ser entendida como refletindo uma intuição compartilhada entre os participantes do workshop que o pensamento computacional, como um modo de pensamento, tem o seu próprio caráter distintivo'' \cite{NRC}
 
 \end{citacao}
 
@@ -101,7 +473,7 @@ As organizações \textit{International Society for Technology in Education} (IS
 
 \begin{citacao}
 
-``Pensamento computacional é um processo de solução de problemas que inclui (mas não está limitado a) as seguintes características: Formular problemas de uma forma que nos permita usar um computador e outras ferramentas para ajudar a resolvê-los; Organizar e analisar logicamente os dados; Representar dados através de abstrações, como modelos e simulações; Automatizar soluções por meio de pensamento algorítmico; Identificar, analisar e implementar possíveis soluções com o objetivo de alcançar a combinação mais eficientes e eficaz de etapas e recursos; Generalizar e transferir esse processo de solução de problemas para uma ampla variedade de problemas.''\cite{iste/csta}(ISTE/CSTA, 2011)
+``Pensamento computacional é um processo de solução de problemas que inclui (mas não está limitado a) as seguintes características: Formular problemas de uma forma que nos permita usar um computador e outras ferramentas para ajudar a resolvê-los; Organizar e analisar logicamente os dados; Representar dados através de abstrações, como modelos e simulações; Automatizar soluções por meio de pensamento algorítmico; Identificar, analisar e implementar possíveis soluções com o objetivo de alcançar a combinação mais eficientes e eficaz de etapas e recursos; Generalizar e transferir esse processo de solução de problemas para uma ampla variedade de problemas.''\cite{iste/csta}
 
 \end{citacao}
 
@@ -134,9 +506,9 @@ Com a solução encontrada, analisar se a estrutura encontrada pode ser estendid
 
 \end{itemize}
 
-Os pesquisadores do ISTE/CSTA observam ainda que essas habilidades são ``apoiadas e reforçadas por uma série de disposições ou atitudes que são dimensões essenciais do pensamento computacional'' assim como ``confiança em lidar com a complexidade, persistência em trabalhar com problemas difíceis, tolerância para a ambiguidade e capacidade de lidar com problemas abertos''\cite{iste/csta} (ISTE/CSTA, 2011).
+Os pesquisadores do ISTE/CSTA observam ainda que essas habilidades são ``apoiadas e reforçadas por uma série de disposições ou atitudes que são dimensões essenciais do pensamento computacional'' assim como ``confiança em lidar com a complexidade, persistência em trabalhar com problemas difíceis, tolerância para a ambiguidade e capacidade de lidar com problemas abertos''\cite{iste/csta}.
 
-Essas características deixam transparecer que o pensamento computacional é uma habilidade que qualquer pessoa deveria ter, independentemente da área de conhecimento ou atividade profissional já que não envolve apenas os conceitos da Computação pois também agrega práticas de projetar sistemas, entender o comportamento humano e o pensamento crítico \cite{wing} (Wing, 2011).
+Essas características deixam transparecer que o pensamento computacional é uma habilidade que qualquer pessoa deveria ter, independentemente da área de conhecimento ou atividade profissional já que não envolve apenas os conceitos da Computação pois também agrega práticas de projetar sistemas, entender o comportamento humano e o pensamento crítico \cite{wing}.
 
 Não devemos confundir ``Pensamento Computacional'' com ``Alfabetismo Digital'', pois este último é a simples aptidão de manusear aplicativos eletrônicos. As novas gerações que ingressam hoje na escola e que estão imersos na linguagem digital dos computadores, vídeo games e da Internet são considerados "nativos digitais", mas Mitch Resnick (2012) questiona a fluência digital destes jovens e explica que embora estes jovens tenham nascidos em um ambiente tecnológico e demonstrem muita experiência e facilidade em interagir com tecnologias, não tem esta mesma habilidade para criar e se expressar utilizando essas novas tecnologias, comparando este jovem com alguém que sabe ler, mas não sabe escrever.
 
@@ -144,12 +516,12 @@ O desenvolvimento do pensamento computacional no jovens exige que a formação d
 
 \begin{citacao}
 
-``A integração das TICs no currículo e na aprendizagem no campo da sua formação inicial é um desafio, pois durante o processo de tornar o pensamento computacional como uma competência fundamental para o século XXI, os professores também devem obrigatoriamente se aproximar dessas tecnologias e refletir dentro da sua área como a diversidade de conceitos, teorias, modelos e práticas podem ser aplicados dentro de sua disciplina de forma abrangente.'' \cite{brac} (Brackmann, 2017). 
+``A integração das TICs no currículo e na aprendizagem no campo da sua formação inicial é um desafio, pois durante o processo de tornar o pensamento computacional como uma competência fundamental para o século XXI, os professores também devem obrigatoriamente se aproximar dessas tecnologias e refletir dentro da sua área como a diversidade de conceitos, teorias, modelos e práticas podem ser aplicados dentro de sua disciplina de forma abrangente.'' \cite{brac}. 
 
 \end{citacao}
 
 
-O Pensamento Computacional pode e deve ser inserido na Educação básica através das disciplinas já existentes e que estão de acordo com a Base Nacional Comum Curricular - BNCC, de tal forma que o seu uso possa ser incentivado em várias disciplinas para que atinja um público cada vez maior. O CSTE/ISTE (2009) também realizou um levantamento com diversas propostas de adoção de forma Pluri, Multi e Transdiciplinar, de forma que BRACKMANN (2017) \cite{brac} as combinou através de duas tabelas.
+O Pensamento Computacional pode e deve ser inserido na Educação básica através das disciplinas já existentes e que estão de acordo com a Base Nacional Comum Curricular - BNCC, de tal forma que o seu uso possa ser incentivado em várias disciplinas para que atinja um público cada vez maior. O CSTE/ISTE (2009) também realizou um levantamento com diversas propostas de adoção de forma Pluri, Multi e Transdiciplinar, de forma que BRACKMANN (2017) as combinou através de duas tabelas.
 
 A tabela \ref{tab1} mostra sugestões de inserção do Pensamento Computacional nas disciplinas de Matemática e Ciências.
 
@@ -229,7 +601,7 @@ Não há um consenso sobre o conceito de Objetos de Aprendizagem, cada autor def
 
 \begin{citacao}
 
-``Um Objeto de Aprendizagem é qualquer recurso, suplementar ao processo de aprendizagem, que pode ser reusado para apoiar a aprendizagem, termo geralmente aplicado a materiais educacionais projetados e construidos em pequenos conjuntos visando a potencializar o processo de aprendizagem onde o recurso pode ser utilizado.''\cite{tarouco} (Tarouco, 2003)
+``Um Objeto de Aprendizagem é qualquer recurso, suplementar ao processo de aprendizagem, que pode ser reusado para apoiar a aprendizagem, termo geralmente aplicado a materiais educacionais projetados e construidos em pequenos conjuntos visando a potencializar o processo de aprendizagem onde o recurso pode ser utilizado.''\cite{tarouco}
 
 \end{citacao}
 
@@ -320,6 +692,40 @@ Por ser uma linguagem de programação, toda ação deve ser dada na forma de co
 ?colocar exemplos de objetos de aprendizagem e de desenvolvimento de pensamento computacional?
 
 \chapter{Metodologia do curso}
+
+
+%novas configurações
+
+\bookmarksetup{startatroot}% 
+% ---
+
+% ---
+% Conclusão
+% ---
+
+%\lipsum[31-33]
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+
+%---------------------------------------------------------------------
+% INDICE REMISSIVO
+%---------------------------------------------------------------------
+
+%anexo de apendices
+\begin{apendicesenv}
+\partapendices
+
+\chapter{Primeiro}
+
+\end{apendicesenv}
+
+%Linha na nova configuração
+
+\printindex
+
 
 
 \bibliography{bibliografia}
