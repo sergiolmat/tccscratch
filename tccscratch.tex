@@ -22,6 +22,7 @@
 \usepackage{booktabs}				
 \usepackage{bold-extra}				% Mapear caracteres especiais no PDF
 \usepackage[final]{pdfpages}
+\usepackage{float}
 
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
@@ -647,7 +648,22 @@ Uma das características mais importantes de um objeto de aprendizagem é o fato
 
  O Scratch é uma linguagem de programação feita por blocos lógicos capaz de integrar sons e imagens em histórias interativas, jogos e animações entre outros programas interativos desenvolvidos pelo usuário de forma intuitiva e sem o conhecimento prévio de outras linguagens de programação. Foi idealizado por Mitchel Resnick para pessoas com idades a partir de 8 anos e criado em 2007 pelo Lifelong Group, no MIT (Instituto de Tecnologia de Massachussets) Media Lab, onde continua sendo desenvolvido e moderado.  Hoje é usado em mais de 150 países e está disponível em mais de 40 idiomas. É importante ressaltar que esse programa possui versões on-line e off-line, isto é, pode ser usado através de um navegador de Internet no caso on-line e assim o usuário pode acessar todos os programas desenvolvidos na plataforma de onde estiver ou, em caso de não possuir Internet, pode instalar em seu computador e usá-lo em sua máquina local para desenvolver seus projetos.
  
- O Scratch é bastante acessível já que usa uma interface gráfica em que os programas são construidos através de blocos lógicos auto-encaixantes lembrando a montagem de um puzzle. A sua interface é de fácil compreensão (vide figura \ref{scr1}) e o uso de suas ferramentas muito intuitivas e sem complicações, possuindo três principais áreas:
+ O Scratch é bastante acessível já que usa uma interface gráfica em que os programas são construidos através de blocos lógicos auto-encaixantes lembrando a montagem de um puzzle e possibilita aos usuários resolver problemas usando a criatividade, o raciocínio lógico e o pensamento computacional de forma lúdica, divertida e também colaborativa, pois seus projetos e programações podem ser compartilhados. O seu slogan é baseado em três princípios: imagine, programe e compartilhe.
+ 
+\begin{figure}[h]
+
+    \center
+    \caption{Slogan do Scratch \label{logoscr1}}
+    \includegraphics[width=5cm]{logoscratch.png}
+    \fonte{Site do Scratch}
+    
+\end{figure} 
+
+O Scratch permite desenvolver jogos, animações e textos interativos, integrando, desta forma, diversas áreas do conhecimento de forma divertida. Assim os usuários podem imaginar uma história ou um jogo e, depois de brincarem e aprenderem com a programação ainda podem compartilhar com colegas e com outros usuários da plataforma suas criações, tornando-se mais criativas e estimuladas a procurarem novas formas de resolverem problemas através da programação e do Pensamento Computacional. 
+
+%\newpage
+ 
+A sua interface é de fácil compreensão (vide figura \ref{scr1}) e o uso de suas ferramentas muito intuitivas e sem complicações, possuindo três principais áreas:
  
 \begin{enumerate}
 \item Nesta área estão armazenados os blocos de comando, organizados a partir da sua funcionalidade.
@@ -658,58 +674,69 @@ Uma das características mais importantes de um objeto de aprendizagem é o fato
 \begin{figure}[h]
 
     \center
-
-    \includegraphics[width=15cm]{scratch1.png}
     \caption{Interface do Scratch \label{scr1}}
+    \includegraphics[width=13cm]{scratch1.png}
+    \fonte{Adaptado do Site do Scratch}
     
 \end{figure}
 
-\newpage
+%\newpage
 
-A primeira área, ou área de blocos de comando (\ref{scr2}), estão os comandos que podem ser usados na programação a ser realizada. Esses comandos estão subdivididos em categorias a partir de suas funcionalidades, como movimento, aparência, som, etc.
+A primeira área, ou área de blocos de comando (vide figura \ref{scr2}), estão os comandos que podem ser usados na programação a ser realizada. Esses comandos estão subdivididos em categorias a partir de suas funcionalidades, como movimento, aparência, som, etc.
 
 \begin{figure}[h]
 
     \center
-
-    \includegraphics[height=7cm]{scratch2.png}
     \caption{Área de blocos de comandos do Scratch \label{scr2}}
+    \includegraphics[height=5cm]{scratch2.png}
+    \fonte{Adaptado do Site do Scratch}
     
 \end{figure}
+
+%\newpage
 
 Nesta área também aparecem as abas de fantasias e sons que podemos usar do próprio Scratch ou de nossos arquivos pessoais. Note que para cada categoria de blocos de comandos existe uma legenda de cores e todos os blocos relacionados a essas categorias tem a mesma cor de suas respectivas legendas.
 
-A segunda área, ou área de comandos (\ref{scr3}), é a área onde os blocos são arrastados com o mouse e encaixados de maneira lógica para formar a programação a ser seguida pelos atores escolhidos.
+A segunda área, ou área de comandos (vide figura \ref{scr3}), é a área onde os blocos são arrastados com o mouse e encaixados de maneira lógica para formar a programação a ser seguida pelos atores escolhidos.
 
 \begin{figure}[h]
 
     \center
-
-    \includegraphics[height=7cm]{scratch3.png}
     \caption{Área de comandos do Scratch \label{scr3}}
+    \includegraphics[height=7cm]{scratch3.png}
+    \fonte{Adaptado do Site do Scratch}
     
 \end{figure}
 
 É nessa área que todas as programações são montadas como um puzzle e cada ator terá sua área de comandos específica.
 
 
-A terceira área (\ref{scr4}) é onde se encontra o simulador do Ecrã (tela onde será projetada a programação), a relação dos atores e o palco com seus cenários.
+A terceira área (vide figura \ref{scr4}) é onde se encontra o simulador do Ecrã (tela onde será projetada a programação), a relação dos atores e o palco com seus cenários.
 
-\begin{figure}[h]
+\begin{figure}[H]
 
     \center
-
-    \includegraphics[height=7cm]{scratch4.png}
     \caption{Simulador de ecrã do Scratch \label{scr4}}
+    \includegraphics[height=6cm]{scratch4.png}
+    \fonte{Adaptado do Site do Scratch}
     
 \end{figure}
 
-O Ecrã é ``mapeado'' através de coordenadas cartesianas e o primeiro ator que aparece (um gato) se posiciona inicialmente no ponto (0,0), isto é, em x=0 e y=0 e o palco apresenta-se em branco.
+O Ecrã é ``mapeado'' através de coordenadas cartesianas e o primeiro ator (também chamado de sprite) que aparece (um gato) se posiciona inicialmente no ponto (0,0), isto é, em x=0 e y=0 e o palco apresenta-se em branco.
 
 
 Por ser uma linguagem de programação, toda ação deve ser dada na forma de comandos devidamente expressos nos seus blocos lógicos que são arrastados para uma área de comandos, conectados uns aos outros ou executados através de sub-rotinas ou de subdivisões. 
+
+\begin{figure}[H]
+
+    \center
+    \caption{Exemplo de animação \label{exemploani4}}
+    \includegraphics[height=8cm]{exemploani.png}
+    \fonte{Criado pelo autor}
+    
+\end{figure}
  
- As suas características de linguagem de programação e de um puzzle fazem com que o Scratch possa ser usado tanto como uma ferramenta para produção de Objetos de Aprendizagem como um meio de desenvolver o pensamento computacional do aluno e, em ambos os casos, esse uso poderá ser interdisciplinar. 
+ As suas características de linguagem de programação e de um puzzle fazem com que o Scratch possa ser usado tanto como uma ferramenta para produção de Objetos de Aprendizagem como um meio de desenvolver o Pensamento Computacional do aluno e, em ambos os casos, esse uso poderá ser de forma interdisciplinar. Como não é necessário digitar um comando e a resposta à programação é quase que imediata, o usuário pode experimentar rapidamente o que criou e corrigir os erros caso seja necessário fazendo assim um ciclo contínuo de novas ideias, desenvolvimento, experimentação, aprendizagem e compartilhamento levando a novas ideias. 
 
 ?colocar exemplos de objetos de aprendizagem e de desenvolvimento de pensamento computacional?
 
