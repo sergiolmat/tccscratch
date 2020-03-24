@@ -24,10 +24,14 @@
 \usepackage[final]{pdfpages}
 \usepackage{float}
 
+% \usepackage{subfig}
+\usepackage{subcaption}
+
+
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
 
-\usepackage[small]{caption}
+\usepackage{caption}
 
 
 \newtheorem{teo}{Teorema}
@@ -76,7 +80,7 @@
 \autor{Sérgio Luís Soares Almeida}
 \local{Brasília}
 \data{\the\year}
-\orientador[Orientadora:]{Prof$^{\underline{a}}$. Dr$^{\underline{a}}$. Tatiane da Silva Evangelista}
+\orientador[Orientadora:]{Prof Dra Tatiane da Silva Evangelista}
 \coorientador{}
 \instituicao{%
   Universidade de Brasília - UnB
@@ -332,7 +336,7 @@
 \begin{center}
  por \\
     \vspace{0.5cm}
- \LARGE{\textbf{\imprimirautor}} *
+ \LARGE{\textbf{\imprimirautor}}
 \end{center}
 
     \vspace{0.5cm}
@@ -457,14 +461,14 @@ O termo \textit{``computational thinking''} (pensamento computacional) passou a 
 
 \begin{citacao}
 
-``O pensamento computacional é uma habilidade fundamental para todos, não apenas para cientistas das computação. À leitura, escrita e aritmética, devemos acrescentar o pensamento computacional à capacidade analítica de cada criança'' \cite{wing}
+``O pensamento computacional é uma habilidade fundamental para todos, não apenas para cientistas das computação. À leitura, escrita e aritmética, devemos acrescentar o pensamento computacional à capacidade analítica de cada criança'' \cite{wing}.
 
 \end{citacao}
 
 
 
 
-No entanto o termo pensamento computacional não é definido em termos precisos. Em dois workshops sobre o âmbito e a natureza do pensamento computacional, patrocinados pela \textit{National Academy of Sciences} dos Estados Unidos da América, em 2009 e 2011, a \textit{National Research Council} publicou:
+No entanto o termo pensamento computacional não é definido em termos precisos. Em dois \textit{workshops} sobre o âmbito e a natureza do pensamento computacional, patrocinados pela \textit{National Academy of Sciences} dos Estados Unidos da América, em 2009 e 2011, a \textit{National Research Council} publicou:
 
 \begin{citacao}
 
@@ -472,7 +476,7 @@ No entanto o termo pensamento computacional não é definido em termos precisos.
 
 \end{citacao}
 
-As organizações \textit{International Society for Technology in Education} (ISTE) e a \textit{American Computer Science Teachers Association} (CSTA) trabalharam com pesquisadores da Ciência da Computação e das áreas de Humanas e construiram uma definição para o pensamento computacional pautada em elementos objetivos que pudesse nortear as atividades realizadas na Educação Básica identificando os seguintes conceitos: coleta de dados, análise de dados, representação de dados, decomposição do problema, abstração, algoritmos, automação, paralelização e simulação. Assim o pensamento computacional é definido como:
+As organizações \textit{International Society for Technology in Education} (ISTE) e a \textit{American Computer Science Teachers Association} (CSTA) trabalharam com pesquisadores da Ciência da Computação e das áreas de Humanas e construiram uma definição para o pensamento computacional pautada em elementos objetivos que pudesse nortear as atividades realizadas na Educação Básica identificando os seguintes conceitos: coleta de dados, análise de dados, representação de dados, decomposição do problema, abstração, algoritmos, automação, paralelização e simulação. Assim o pensamento computacional foi definido como:
 
 \begin{citacao}
 
@@ -519,14 +523,14 @@ O desenvolvimento do pensamento computacional no jovens exige que a formação d
 
 \begin{citacao}
 
-``A integração das TICs no currículo e na aprendizagem no campo da sua formação inicial é um desafio, pois durante o processo de tornar o pensamento computacional como uma competência fundamental para o século XXI, os professores também devem obrigatoriamente se aproximar dessas tecnologias e refletir dentro da sua área como a diversidade de conceitos, teorias, modelos e práticas podem ser aplicados dentro de sua disciplina de forma abrangente.'' \cite{brac}. 
+``A integração das TICs no currículo e na aprendizagem no campo da sua formação inicial é um desafio, pois durante o processo de tornar o pensamento computacional como uma competência fundamental para o século XXI, os professores também devem obrigatoriamente se aproximar dessas tecnologias e refletir dentro da sua área como a diversidade de conceitos, teorias, modelos e práticas podem ser aplicados dentro de sua disciplina de forma abrangente'' \cite{brac}. 
 
 \end{citacao}
 
 
-O Pensamento Computacional pode e deve ser inserido na Educação básica através das disciplinas já existentes e que estão de acordo com a Base Nacional Comum Curricular - BNCC, de tal forma que o seu uso possa ser incentivado em várias disciplinas para que atinja um público cada vez maior. O CSTE/ISTE (2009) também realizou um levantamento com diversas propostas de adoção de forma Pluri, Multi e Transdiciplinar, de forma que BRACKMANN (2017) as combinou através de duas tabelas.
+O Pensamento Computacional pode e deve ser inserido na Educação Básica através das disciplinas já existentes e que estão de acordo com a Base Nacional Comum Curricular - BNCC, de tal forma que o seu uso possa ser incentivado em várias disciplinas para que atinja um público cada vez maior. O CSTE/ISTE (2009) também realizou um levantamento com diversas propostas de adoção de forma Pluri, Multi e Transdiciplinar, de forma que BRACKMANN (2017) as combinou através de duas tabelas.
 
-A tabela \ref{tab1} mostra sugestões de inserção do Pensamento Computacional nas disciplinas de Matemática e Ciências.
+A Tabela \ref{tab1} mostra sugestões de inserção do Pensamento Computacional nas disciplinas de Matemática e Ciências.
 
 \newpage
 
@@ -597,14 +601,14 @@ Assim percebemos como o desenvolvimento do Pensamento Computacional nos jovens p
 
 \section{Objetos de Aprendizagem}
 
-Os Objetos de Aprendizagem podem ser um grande aliado do professor como ferramenta de aprendizagem e de revisão de conceitos em vários conteúdos e propostas de ensino. A metodologia e o planejamento de suas aplicações são fatores determinantes para o sucesso da aprendizagem e para o desenvolvimento de estratégias para resolução de problemas, o seu uso deve estar previamente ligado aos objetivos do conteúdo e da aprendizagem que se quer alcançar. Podem ser de qualquer mídia ou formato, como uma apresentação em stop motion (animação quadro-a-quadro) ou uma simulação.
+Os Objetos de Aprendizagem podem ser um grande aliado do professor como ferramenta de aprendizagem e de revisão de conceitos em vários conteúdos e propostas de ensino. A metodologia e o planejamento de suas aplicações são fatores determinantes para o sucesso da aprendizagem e para o desenvolvimento de estratégias para resolução de problemas, o seu uso deve estar previamente ligado aos objetivos do conteúdo e da aprendizagem que se quer alcançar. Podem ser de qualquer mídia ou formato, como uma apresentação em \textit{stop motion} (animação quadro-a-quadro) ou uma simulação.
 
 Não há um consenso sobre o conceito de Objetos de Aprendizagem, cada autor define de acordo com uma concepção própria levando em consideração a utilidade e importância do Objeto para o ensino e a aprendizagem, desta forma, é importante que o conceito de um Objeto de Aprendizagem esteja de acordo com o objetivo do estudo e do planejamento do momento de aprendizagem. Entretanto, uma definição de Objetos de Aprendizagem significativa é dada por Tarouco (2003):
 
 
 \begin{citacao}
 
-``Um Objeto de Aprendizagem é qualquer recurso, suplementar ao processo de aprendizagem, que pode ser reusado para apoiar a aprendizagem, termo geralmente aplicado a materiais educacionais projetados e construidos em pequenos conjuntos visando a potencializar o processo de aprendizagem onde o recurso pode ser utilizado.''\cite{tarouco}
+``Um Objeto de Aprendizagem é qualquer recurso, suplementar ao processo de aprendizagem, que pode ser reusado para apoiar a aprendizagem, termo geralmente aplicado a materiais educacionais projetados e construidos em pequenos conjuntos visando a potencializar o processo de aprendizagem onde o recurso pode ser utilizado''\cite{tarouco}.
 
 \end{citacao}
 
@@ -704,7 +708,7 @@ A primeira área, ou área de blocos de comando (vide figura \ref{scr2}), estão
 
 Nesta área também aparecem as abas de fantasias e sons que podemos usar do próprio Scratch ou de nossos arquivos pessoais. Note que para cada categoria de blocos de comandos existe uma legenda de cores e todos os blocos relacionados a essas categorias tem a mesma cor de suas respectivas legendas.
 
-A segunda área, ou área de comandos (vide figura \ref{scr3}), é a área onde os blocos são arrastados com o mouse e encaixados de maneira lógica para formar a programação a ser seguida pelos atores escolhidos.
+A segunda área, chamada área de comandos (vide figura \ref{scr3}), é a área onde os blocos são arrastados com o mouse e encaixados de maneira lógica para formar a programação a ser seguida pelos atores escolhidos.
 
 \begin{figure}[H]
 
@@ -901,6 +905,45 @@ A fase à distância desse encontro foi apresentar aos alunos os Objetos Digitai
 Este encontro foi planejado para que cada professor apresente os projetos desenvolvidos por eles e pelos seus alunos. Além dessa apresentação, os professores fizeram considerações sobre como cada aluno percebeu os Objetos Digitais de Aprendizagem desenvolvidos e como esses mesmos alunos desenvolveram os seus próprios programas dentro da plataforma, utilizando-a para contar histórias, para elaborar jogos, ou mesmo para resolver problemas elaborados pelo professor através da programação.
 
 \section{Resultados Obtidos}
+
+A primeira atividade dos professores com seus alunos, o desenvolvimento da história animada, teve uma ótima repercurssão entre os professores que além de contarem algumas histórias para seus alunos, puderam perceber como podem interagir com essas histórias. Os professores de anos iniciais juntaram-se em grupo e usaram estas histórias como forma de fixação de leitura e interpretação de texto, já que alguns de seus alunos acabaram de ser alfabetizados e estavam ainda tendo dificuldades em compreender o que estavam lendo. Os que tinham mais facilidade em interpretação de texto, segundo os professores, se motivaram a também escreverem histórias e as estavam desenvolvendo tanto no site do Scratch como em forma de quadrinhos em seus cadernos. Os professores que atuavam em salas de recursos usaram outras abordagens para contar suas histórias, usando estímulos como sons de animais e objetos que encontraram em \textit{sites} de efeitos sonoros para desenvolver uma melhor interação com os seus alunos.
+
+Os resultados mais significativos desse primeiro contato com os alunos vieram dos relatos dos professores que atuam nos Anos Finais e no Ensino Médio, pois seus alunos foram estimulados a contar as suas próprias histórias dentro da plataforma. Para melhor direcionar essas histórias, os professores foram orientados que pedissem aos alunos para pesquisar um fato histórico ou um personagem relacionado ao conteúdo trabalhado em sala. Desta forma a programação dessa história envolveu outras disciplinas e motivou os alunos a aprenderem o conteúdo e também a representá-lo. 
+
+Dentre esses trabalhos o que mais se destacou foi desenvolvido pelo professor de Ciências na modalidade Anos Finais, cujo conteúdo foi a ``História da Física'': Os seus alunos foram separados em grupos e escolheram os personagens históricos que desenvolveram a Física como Ciência. Pesquisaram quais as contribuições desses personagens e transformaram essa narrativa em uma programação no site do Scratch. Usando como exemplo a história de Aristóteles narrada por um destes alunos e analisando a programação realizada, pode-se perceber como esta programação envolve várias disciplinas (vide o conjunto de figuras \ref{histaris}).
+
+\begin{figure}[H]
+
+ \centering
+ 
+         \caption{Programação da História de Aristóteles \label{histaris}}
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[height=8cm]{histaristoteles1.png}
+         \caption*{Aristóteles}
+         \label{aristoteles}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[height=8cm]{histaristoteles3platao.png}
+         \caption*{Platão}
+         \label{platao}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[height=8cm]{histaristoteles2alexandre.png}
+         \caption*{Alexandre}
+         \label{alexandre}
+     \end{subfigure}
+     
+     \fonte{https://scratch.mit.edu/projects/378647189/}
+    
+\end{figure}
+
+Envolvendo a disciplina de História, o aluno usou três personagens: Platão, Alexandre e o próprio Aristóteles. No campo da Matemática, a primeira aparição de Aristóteles aparece um pouco maior que no restante da narrativa, e vemos na programação que o aluno usou a ideia de porcentagem para este aumento e, além disso, para posicioná-lo usou o sistema do Ecrã do Scratch, que é baseado no Plano Cartesiano. Em Filosofia, usou os pensamentos filosóficos da época para mostrar como foram as contribuições de Aristóteles para a Física, para a Óptica e para a própria Filosofia. Ainda temos o estudo da Língua Portuguesa, que perpassa por toda a história, tanto na narração como nos diálogos dos personagens. 
+
 
 
 - projetos que chamaram a atenção
