@@ -79,7 +79,7 @@
 
 %informações do título
 
-\titulo{Usando o Scratch como ferramenta interdisciplinar através da programação}
+\titulo{Usando o \textit{Scratch} como ferramenta interdisciplinar através da programação}
 \autor{Sérgio Luís Soares Almeida}
 \local{Brasília}
 \data{\the\year}
@@ -308,14 +308,16 @@
 	\imprimirdata.}\\
 	
 	\hspace{0.5cm}
-		1. Palavra Chave 1.
-		2. Palavra Chave 2.
-		I. Nome do Orientador.
+		1. \textit{Scratch}.
+		2. Interdisciplinar.
+		3. Pensamento Computacional.
+		4. Linguagem de Programação.
+		I. Prof Dra Tatiane da Silva Evangelista.
 		II. Universidade de Brasília.
 		III. PROFMAT - SBM.
-		IV. Título XYZ\\ 			
+		IV. Título Usando o \textit{Scratch} como ferramenta interdisciplinar através da programação\\ 			
 	
-	\hspace{8.75cm} ?CDU XYZ 02:141:005.7?\\
+	\hspace{8.75cm} \\ %{?CDU XYZ 02:141:005.7?} 
 	
 	\end{minipage}
 	\end{center}
@@ -344,13 +346,13 @@
 
     \vspace{0.5cm}
 \noindent Disserta\c c\~ao apresentada ao Departamento de Matem\'atica da Universidade de Bras\'ilia,
-como parte dos requisitos do ``Programa'' de Mestrado Profissional em Matem\'atica em Rede 
+como parte dos requisitos do Programa de Mestrado Profissional em Matem\'atica em Rede 
 Nacional - PROFMAT, para obten\c c\~ao do grau de 
 \begin{center}
     \vspace{0.2cm}
  \LARGE{\textbf{MESTRE}}\\
     \vspace{0.5cm}
- Bras\'ilia, 29 de maio de 2020
+ Bras\'ilia, -- de ---- de 2020 % NÃO ESQUECER DE ARRUMAR A DATA
 \end{center}
 
     \vspace{1.5cm}
@@ -380,14 +382,25 @@ Nacional - PROFMAT, para obten\c c\~ao do grau de
    \vspace*{\fill}
    \centering
    \noindent
-    \textit{Texto da dedicatória.}\vspace*{\fill}
+    \textit{Dedico esse trabalho primeiramente a Deus, que sempre esteve ao meu lado nos momentos de angústia, à minha mãe, Maria de Jesus Soares, aos meus irmãos, Liana Soares e Marcelo Soares e ao meu filho Gabriel Rodrigues que sempre me incentivaram e ainda me incentivam a continuar na vida acadêmica.}\vspace*{\fill}
+    
 \end{dedicatoria}
 
 %folha agradecimentos
 
 \begin{agradecimentos}
 
-Texto do agradecimento.
+Agradeço em primeiro lugar a Deus por ter me abençoado e iluminado o meu caminho, me mostrando quais as escolhas corretas e como a vida é maravilhosa. Agraceço a minha mãe, \textit{Maria de Jesus Soares}, o meu maior exemplo de determinação. Agradeço aos meus irmãos \textit{Marcelo Soares} e \textit{Liana Soares} por sempre me apoiarem e me incentivarem.
+
+Agradeço ao meu filho, \textit{Gabriel Rodrigues}, que sempre esteve ao meu lado, me incentivando, me apoiando e me trazendo muita alegria. Obrigado por estar sempre presente em todos os momentos da minha vida.
+
+Agradeço a todos os amigos da turma do PROFMAT 2018. Sempre lembrarei dos momentos maravilhosos que passamos juntos.
+
+Agradeço à minha professora e orientadora, professora Tatiane, pela sua amizade, pelos conselhos, por ter acreditado no meu potencial e nesse trabalho.
+
+Agradeço aos meus amigos \textit{Clébia}, \textit{Cláudio}, \textit{Douglas}, \textit{Fabiano}, \textit{Maico}, \textit{Wagner} e \textit{Rodrigo} por me mostrarem como a união pode superar qualquer dificuldade e como o estudo em grupo é essencial na vida acadêmica.
+
+Agradeço a todos que sempre me acompanharam e sempre torceram por mim.
 
 \end{agradecimentos}
 
@@ -396,7 +409,7 @@ Texto do agradecimento.
 \begin{epigrafe}
     \vspace*{\fill}
 	\begin{flushright}
-		\textit{\lq\lq Citação \rq\rq\\ Autor}
+		\textit{\lq\lq Educar verdadeiramente não é ensinar fatos novos ou enumerar fórmulas prontas, mas sim preparar a mente para pensar \rq\rq\\ Albert Einstein}
 	\end{flushright}
 \end{epigrafe}
 
@@ -454,16 +467,16 @@ Texto do abstract.
 \chapter*[Introdução]{Introdução}
 \addcontentsline{toc}{chapter}{Introdução}
 
-As novas tecnologias digitais de comunicação e informação causaram e ainda causam grandes transformações no trabalho, nas relações interpessoais e na sociedade em geral, mas essas transformações não são tão rápidas e profundas na educação, especialmente na educação básica. O computador, como ferramenta educacional, ainda é muito utilizado apenas como um meio de reprodução de atividades que já eram desenvolvidas anteriormente mudando apenas o meio de comunicação. A forma de apresentar os conteúdos e as aulas, em sua essência, progrediram pouco ou quase nada, com o professor ainda sendo o detentor do conhecimento e os alunos com o objetivo de reproduzir esses conhecimentos que agora podem ser pesquisados nos \textit{sites} e nos \textit{blogs} escritos ou indicados por esse professor.
+As novas Tecnologias Digitais de Informação e Comunicação causaram e ainda causam grandes transformações no trabalho, nas relações interpessoais e na sociedade em geral, mas essas transformações não são tão rápidas e profundas na educação, especialmente na educação básica. O computador, como ferramenta educacional, ainda é muito utilizado apenas como um meio de reprodução de atividades que já eram desenvolvidas anteriormente mudando apenas o meio de comunicação. A forma de apresentar os conteúdos e as aulas, em sua essência, progrediram pouco ou quase nada, com o professor ainda sendo o detentor do conhecimento e os alunos com o objetivo de reproduzir esses conhecimentos que agora podem ser pesquisados nos \textit{sites} e nos \textit{blogs} escritos ou indicados pelo professor.
 
 
 O uso das tecnologias na educação não pode servir apenas a uma proposta onde o computador passe alguma instrução ao aluno mas, principalmente, crie oportunidades para que o estudante possa programar e criar. É necessária uma nova abordagem no ensino, de forma que o aluno possa ser independente, que saiba procurar, selecionar e resolver os problemas ao seu redor usando as informações disponíveis e, desta forma, aprendendo com as situações apresentadas em seu meio social e cultural. 
 
-Nos últimos anos, alguns pesquisadores, como Brackmann, defendem que os conhecimentos em Computação sejam inseridos no ambiente escolar, pois ``...são tão importantes para a vida na sociedade contemporânea quanto os conhecimentos básicos de Matemática, Filosofia, Física, dentre outras, assim como contar, abstrair, pensar, relacionar ou medir'' \cite{brac}. Em contrapartida, a linguagem de programação, acrescenta ao aluno um raciocínio lógico aguçado capaz de entender essas novas tecnologias não apenas como um mero usuário, mas como um indivíduo com a habilidade de modificar e criar novos conhecimentos que podem ser aplicados em sua vida acadêmica, em seu trabalho e em seu cotidiano.
+Nos últimos anos, alguns pesquisadores, como BRACKMANN, defendem que os conhecimentos em Computação sejam inseridos no ambiente escolar, dado que ``...são tão importantes para a vida na sociedade contemporânea quanto os conhecimentos básicos de Matemática, Filosofia, Física, dentre outras, assim como contar, abstrair, pensar, relacionar ou medir'' \cite{brac}. Em contrapartida, a linguagem de programação, acrescenta ao aluno um raciocínio lógico aguçado capaz de entender essas novas tecnologias não apenas como um mero usuário, mas como um indivíduo com a habilidade de modificar e criar novos conhecimentos que podem ser aplicados em sua vida acadêmica, em seu trabalho e em seu cotidiano.
 
 Diante desse cenário, o \textit{Scratch} é uma ferramenta que propõe a introdução da linguagem de programação acessível e interdisciplinar dando a possibilidade ao aluno de criar seus próprios programas, jogos, histórias e apresentações e com a capacidade de desenvolver o raciocínio lógico de forma gradual e sistemática facilitando a resolução de problemas mais complexos e mais abrangentes.
 
-Em parceria com o Centro de Referência em Tecnologia Educacional (CRTE) do Distrito Federal, onde estou como coordenador e formador de professores, e sentindo também a necessidade de inserir o \textit{Scratch} na sala de aula com base no Currículo de Educação Básica, foi oferecido uma formação com duração de 21 horas diretas e 9 indiretas para professores da rede pública de ensino de diferentes formações acadêmicas e de diferentes modalidades e funções. Os CRTE são setores da Secretaria Estadual de Educação criados em todas as regiões administrativas do Distrito Federal que oferecem formações variadas e tem como principal atribuição contribuir para a melhoria da qualidade  do ensino e a operacionalização do Currículo de Educação Básica, por meio de implementação, acompanhamento e utilização pedagógica das Tecnologias Digitais de Informação e Comunicação junto às unidades escolares da Rede Pública de Ensino do Distrito Federal. Desta forma pôde-se também estudar de que forma a programação através do \textit{Scratch} realmente contribui na aprendizagem e na compreensão dos conteúdos de forma interdisciplinar.
+Em parceria com o Centro de Referência em Tecnologia Educacional (CRTE) do Recanto das Emas - Distrito federal e sentindo também a necessidade de inserir o \textit{Scratch} na sala de aula com base no Currículo de Educação Básica, foi oferecido uma formação com duração de 21 horas diretas e 9 indiretas para professores da rede pública de ensino de diferentes formações acadêmicas e de diferentes modalidades e funções. Os CRTE são setores da Secretaria Estadual de Educação criados em todas as regiões administrativas do Distrito Federal que oferecem formações variadas e tem como principal atribuição contribuir para a melhoria da qualidade  do ensino e a operacionalização do Currículo de Educação Básica, por meio de implementação, acompanhamento e utilização pedagógica das Tecnologias Digitais de Informação e Comunicação junto às unidades escolares da Rede Pública de Ensino do Distrito Federal. Desta forma pôde-se também estudar de que forma a programação através do \textit{Scratch} realmente contribui na aprendizagem e na compreensão dos conteúdos de forma interdisciplinar.
 
 Outros objetivos inerentes aos estudos realizados nesse trabalho são:
 \begin{itemize}
@@ -475,7 +488,7 @@ Outros objetivos inerentes aos estudos realizados nesse trabalho são:
 
 \end{itemize}
 
-Para um melhor entendimento, esse trabalho foi dividido em 03 capítulos, de forma que o primeiro capítulo é destinado a apresentação dos estudos que servem de embasamento teórico para o curso. O segundo capítulo tem como objetivo apresentar o que é o \textit{Scratch} de forma geral e como ele foi criado. No terceiro capítulo será explicado a metodologia do curso com a descrição dos estudos realizados em cada encontro e com os resultados obtidos.
+Para um melhor entendimento, esse trabalho foi dividido de tal forma que um capítulo é destinado a apresentação dos estudos que servem de embasamento teórico para o curso, outro capítulo tem como objetivo apresentar o que é o \textit{Scratch} de forma geral e como ele foi criado e em mais um capítulo será explicado a metodologia do curso com a descrição dos estudos realizados em cada encontro e com os resultados obtidos.
 
 
 
@@ -506,7 +519,7 @@ Para um melhor entendimento, esse trabalho foi dividido em 03 capítulos, de for
 
 \chapter{Referencial Teórico}
 
-A sociedade não precisa mais esperar o horário fixo de um determinado programa, de um determinado noticiário, ou até mesmo de um jornal impresso ou de um livro, as novas tecnologias de informação e comunicação apresentam um novo modelo de espaço e tempo, proporcionando a qualquer pessoa a escolher qual o momento ideal para ter acesso a uma notícia, qual o melhor lugar para assistir a um filme ou série, qual o passatempo a ser acessado, desta forma cada indivíduo faz a sua programação em seu tempo e em seu espaço, acessando as notícias e as informações que lhes sejam interessantes e descartando o que não os interessa. Esse novo modelo de relação das novas tecnologias de informação e comunicação com o tempo e espaço ainda não foram totalmente assimiladas pela escola.
+A sociedade não precisa mais esperar o horário fixo de um determinado programa, de um determinado noticiário, ou até mesmo de um jornal impresso ou de um livro, as novas Tecnologias Digitais de Informação e Comunicação apresentam um novo modelo de espaço e tempo, proporcionando a qualquer pessoa a escolher qual o momento ideal para ter acesso a uma notícia, qual o melhor lugar para assistir a um filme ou série, qual o passatempo a ser acessado, desta forma cada indivíduo faz a sua programação em seu tempo e em seu espaço, acessando as notícias e as informações que lhes sejam interessantes e descartando o que não os interessa. Esse novo modelo de relação das novas Tecnologias Digitais de Informação e Comunicação com o tempo e espaço ainda não foram totalmente assimiladas pela escola.
 
 \begin{citacao}
 
@@ -515,7 +528,7 @@ A sociedade não precisa mais esperar o horário fixo de um determinado programa
 \end{citacao}
 
 
-A escola continua a ser uma instituição que, apesar do avanço nas tecnologias de informação e comunicação, continua com os mesmos conceitos de ensino focados no professor e no conteúdo tendo como finalidade principal o ensino em vez da aprendizagem. 
+A escola continua a ser uma instituição que, apesar do avanço nas Tecnologias Digitais de Informação e Comunicação, continua com os mesmos conceitos de ensino focados no professor e no conteúdo tendo como finalidade principal o ensino em vez da aprendizagem. 
 
 \begin{citacao}
 
@@ -575,7 +588,7 @@ No entanto o termo pensamento computacional não é definido em termos precisos.
 
 \begin{citacao}
 
-``Os debates realizados no Workshop de fevereiro de 2009 não chegaram a um acordo geral entre os participantes sobre o conteúdo preciso de pensamento computacional, e muito menos a sua estrutura. No entanto, a falta de desacordo explícito sobre seus membros poderia ser entendida como refletindo uma intuição compartilhada entre os participantes do workshop que o pensamento computacional, como um modo de pensamento, tem o seu próprio caráter distintivo'' \cite{NRC}
+``Os debates realizados no Workshop de fevereiro de 2009 não chegaram a um acordo geral entre os participantes sobre o conteúdo preciso de pensamento computacional, e muito menos a sua estrutura. No entanto, a falta de desacordo explícito sobre seus membros poderia ser entendida como refletindo uma intuição compartilhada entre os participantes do workshop que o pensamento computacional, como um modo de pensamento, tem o seu próprio caráter distintivo.'' \cite{NRC}.
 
 \end{citacao}
 
@@ -583,7 +596,7 @@ As organizações \textit{International Society for Technology in Education} (IS
 
 \begin{citacao}
 
-``Pensamento computacional é um processo de solução de problemas que inclui (mas não está limitado a) as seguintes características: Formular problemas de uma forma que nos permita usar um computador e outras ferramentas para ajudar a resolvê-los; Organizar e analisar logicamente os dados; Representar dados através de abstrações, como modelos e simulações; Automatizar soluções por meio de pensamento algorítmico; Identificar, analisar e implementar possíveis soluções com o objetivo de alcançar a combinação mais eficientes e eficaz de etapas e recursos; Generalizar e transferir esse processo de solução de problemas para uma ampla variedade de problemas.''\cite{iste/csta}
+``Pensamento computacional é um processo de solução de problemas que inclui (mas não está limitado a) as seguintes características: Formular problemas de uma forma que nos permita usar um computador e outras ferramentas para ajudar a resolvê-los; Organizar e analisar logicamente os dados; Representar dados através de abstrações, como modelos e simulações; Automatizar soluções por meio de pensamento algorítmico; Identificar, analisar e implementar possíveis soluções com o objetivo de alcançar a combinação mais eficientes e eficaz de etapas e recursos; Generalizar e transferir esse processo de solução de problemas para uma ampla variedade de problemas.''\cite{iste/csta}.
 
 \end{citacao}
 
@@ -758,9 +771,9 @@ Uma das características mais importantes de um objeto de aprendizagem é o fato
 Ao responder essas perguntas os objetos de aprendizagem construídos serão mais eficientes e com maior capacidade de serem reutilizados e recombinados com outros conteúdos.
 
 
-\chapter{Apresentando o Scratch}
+\chapter{Apresentando o \textit{Scratch}}
 
- O \textit{Scratch} é uma linguagem de programação feita por blocos lógicos capaz de integrar sons e imagens em histórias interativas, jogos e animações entre outros programas interativos desenvolvidos pelo usuário de forma intuitiva e sem o conhecimento prévio de outras linguagens de programação. Foi idealizado por Mitchel Resnick para pessoas com idades a partir de 8 anos e criado em 2007 pelo Lifelong Group, no MIT (Instituto de Tecnologia de Massachussets) Media Lab, onde continua sendo desenvolvido e moderado.  Hoje é usado em mais de 150 países e está disponível em mais de 40 idiomas. É importante ressaltar que esse programa possui versões on-line e off-line, isto é, pode ser usado através de um navegador de Internet no caso on-line e assim o usuário pode acessar todos os programas desenvolvidos na plataforma de onde estiver ou, em caso de não possuir Internet, pode instalar em seu computador e usá-lo em sua máquina local para desenvolver seus projetos.
+ O \textit{Scratch} é uma linguagem de programação feita por blocos lógicos capaz de integrar sons e imagens em histórias interativas, jogos e animações entre outros programas interativos desenvolvidos pelo usuário de forma intuitiva e sem o conhecimento prévio de outras linguagens de programação. Foi idealizado por Mitchel Resnick para pessoas com idades a partir de 8 anos e criado em 2007 pelo Lifelong Group, no MIT (Instituto de Tecnologia de Massachussets) Media Lab, onde continua sendo desenvolvido e moderado.  Hoje é usado em mais de 150 países e está disponível em mais de 40 idiomas. É importante ressaltar que esse programa possui versões \textit{on-line} e \textit{off-line}, isto é, pode ser usado através de um navegador de Internet no caso \textit{on-line} e assim o usuário pode acessar todos os programas desenvolvidos na plataforma de onde estiver ou, em caso de não possuir Internet, pode instalar em seu computador e usá-lo em sua máquina local para desenvolver seus projetos.
  
  O \textit{Scratch} é bastante acessível já que usa uma interface gráfica em que os programas são construidos através de blocos lógicos auto-encaixantes lembrando a montagem de um puzzle e possibilita aos usuários resolver problemas usando a criatividade, o raciocínio lógico e o pensamento computacional de forma lúdica, divertida e também colaborativa, pois seus projetos e programações podem ser compartilhados. O seu slogan é baseado em três princípios: imagine, programe e compartilhe.
  
@@ -777,7 +790,7 @@ O \textit{Scratch} permite desenvolver jogos, animações e textos interativos, 
 
 %\newpage
  
-A sua interface é de fácil compreensão (vide figura \ref{scr1}) e o uso de suas ferramentas muito intuitivas e sem complicações, possuindo três principais áreas:
+A sua interface é de fácil compreensão (vide Figura \ref{scr1}) e o uso de suas ferramentas muito intuitivas e sem complicações, possuindo três principais áreas:
  
 \begin{enumerate}
 \item Nesta área estão armazenados os blocos de comando, organizados a partir da sua funcionalidade.
@@ -796,7 +809,7 @@ A sua interface é de fácil compreensão (vide figura \ref{scr1}) e o uso de su
 
 %\newpage
 
-A primeira área, ou área de blocos de comando (vide figura \ref{scr2}), estão os comandos que podem ser usados na programação a ser realizada. Esses comandos estão subdivididos em categorias a partir de suas funcionalidades, como movimento, aparência, som, etc.
+A primeira área, ou área de blocos de comando (vide Figura \ref{scr2}), estão os comandos que podem ser usados na programação a ser realizada. Esses comandos estão subdivididos em categorias a partir de suas funcionalidades, como movimento, aparência, som, etc.
 
 \begin{figure}[H]
 
@@ -811,7 +824,7 @@ A primeira área, ou área de blocos de comando (vide figura \ref{scr2}), estão
 
 Nesta área também aparecem as abas de fantasias e sons que podemos usar do próprio \textit{Scratch} ou de nossos arquivos pessoais. Note que para cada categoria de blocos de comandos existe uma legenda de cores e todos os blocos relacionados a essas categorias tem a mesma cor de suas respectivas legendas.
 
-A segunda área, chamada área de comandos (vide figura \ref{scr3}), é a área onde os blocos são arrastados com o mouse e encaixados de maneira lógica para formar a programação a ser seguida pelos atores escolhidos.
+A segunda área, chamada área de comandos (vide Figura \ref{scr3}), é a área onde os blocos são arrastados com o mouse e encaixados de maneira lógica para formar a programação a ser seguida pelos atores escolhidos.
 
 \begin{figure}[H]
 
@@ -825,7 +838,7 @@ A segunda área, chamada área de comandos (vide figura \ref{scr3}), é a área 
 É nessa área que todas as programações são montadas como um puzzle e cada ator terá sua área de comandos específica.
 
 
-A terceira área (vide figura \ref{scr4}) é onde se encontra o simulador do Ecrã (tela onde será projetada a programação), a relação dos atores e o palco com seus cenários.
+A terceira área (vide Figura \ref{scr4}) é onde se encontra o simulador do Ecrã (tela onde será projetada a programação), a relação dos atores e o palco com seus cenários.
 
 \begin{figure}[H]
 
@@ -902,7 +915,7 @@ O curso também contou com exercícios e estudos à distância, para que os prof
 
 \end{enumerate}
 
-Através do site \textit{https://lightbot.com/flash.html} foi introduzida a ideia de Pensamento Computacional. Neste site a pessoa tem que programar um robô através de setas e outras imagens para que ``acenda'' os blocos azuis e os transforme em amarelos (vide figura \ref{robo2}).
+Através do site \textit{https://lightbot.com/flash.html} foi introduzida a ideia de Pensamento Computacional. Neste site a pessoa tem que programar um robô através de setas e outras imagens para que ``acenda'' os blocos azuis e os transforme em amarelos (vide Figura \ref{robo2}).
 
 \begin{figure}[H]
 
@@ -923,7 +936,7 @@ Para melhor estruturar essas ideias, os professores leram o primeiro capítulo d
 
 \end{enumerate}
 
-Neste encontro os professores foram apresentados à página do \textit{Scratch} através de uma história animada construída no software (figura \ref{exemploani4}) para descontrair e iniciar uma conversa sobre a computação e a sala de aula. Após esse primeiro momento foram realizados pedidos de abertura de contas especiais de professor na plataforma do \textit{Scratch}, para que, desta forma todos possam utilizar a plataforma com seus alunos. Após esse procedimento, os professores abriram pela primeira vez a área de criação de programas e fizeram seu primeiro programa escolhendo um \textit{sprite} com que mais se identificassem e, com algumas orientações de como escolher os comandos, se apresentassem através de uma história animada.
+Neste encontro os professores foram apresentados à página do \textit{Scratch} através de uma história animada construída no software (vide Figura \ref{exemploani4}) para descontrair e iniciar uma conversa sobre a computação e a sala de aula. Após esse primeiro momento foram realizados pedidos de abertura de contas especiais de professor na plataforma do \textit{Scratch}, para que, desta forma todos possam utilizar a plataforma com seus alunos. Após esse procedimento, os professores abriram pela primeira vez a área de criação de programas e fizeram seu primeiro programa escolhendo um \textit{sprite} com que mais se identificassem e, com algumas orientações de como escolher os comandos, se apresentassem através de uma história animada.
 
 
 
@@ -975,7 +988,7 @@ A transformação desse algoritmo em uma programação do \textit{Scratch} foi r
 
 O quarto encontro teve como objetivo principal o estudo e o primeiro esboço de um Objeto Digital de Aprendizagem a ser desenvolvido pelos professores de acordo com suas disciplinas e conteúdos, levando em conta as dificuldades observadas em sala de aula, e, quando pronto, apresentado aos alunos.
 
-Em um primeiro momento, os professores tiveram contato com um jogo desenvolvido com o objetivo de praticar os conceitos de soma e subtração de números naturais restringidos até o número 10 entre as parcelas (figura \ref{somaesub}). Desta forma eles puderam ver como elaborar um Objeto Digital de Aprendizagem com o \textit{Scratch}.
+Em um primeiro momento, os professores tiveram contato com um jogo desenvolvido com o objetivo de praticar os conceitos de soma e subtração de números naturais restringidos até o número 10 entre as parcelas (vide Figura \ref{somaesub}). Desta forma eles puderam ver como elaborar um Objeto Digital de Aprendizagem com o \textit{Scratch}.
 
 \begin{figure}[H]
 
@@ -1053,7 +1066,7 @@ Após esse primeiro momento, os professores desenvolveram Objetos Digitais de Ap
 
 Os professores que atuavam em salas de recurso desenvolveram dois programas para ajudar os alunos que tinham dificuldades motoras e não conseguiam ter o domínio do \textit{mouse}. 
 
-O primeiro programa (vide figura \ref{rec1}) foi desenvolvido para que o aluno pudesse movimentar uma bola que flutuava e mudava de cor ao encostar em algum elemento no palco.
+O primeiro programa (vide Figura \ref{rec1}) foi desenvolvido para que o aluno pudesse movimentar uma bola que flutuava e mudava de cor ao encostar em algum elemento no palco.
 
 \begin{figure}[H]
 
@@ -1119,11 +1132,11 @@ Dentre as situações problemas propostas, destaca-se o trabalho realizado pelos
 \end{figure}
 
 
-Neste programa (vide figura \ref{pao}), a pessoal informa qual a quantidade de pães quer fazer e o programa calcula a quantidade de ingredientes necessários para a receita. 
+Neste programa (vide Figura \ref{pao}), a pessoal informa qual a quantidade de pães quer fazer e o programa calcula a quantidade de ingredientes necessários para a receita. 
 
 Mesmo com uma programação simples e com poucos comandos, percebe-se como o aluno usou os conceitos de desenvolvimento do Pensamento Computacional apresentados. Em primeiro lugar, houve uma coleta dos dados iniciais, onde o aluno pesquisou quais ingredientes eram necessários para a produção de certa quantidade de pães. Após a coleta de dados, analisou a quantidade de cada um dos ingredientes e, através de cálculos envolvendo proporção, automatizou soluções por meio de pensamento algorítmico, generalizando estas quantidades de ingredientes para qualquer quantidade de pães necessários. Para chegar a essa solução, o aluno não só usou as regras de proporção, que era o conteúdo inicial a ser estudado, mas também aprendeu a pesquisar e a analisar os textos da receita.
 
-Um segundo trabalho produzido por alunos de anos iniciais a ser destacado é um jogo de tabuleiro que envolve um questionário estimulado pelo professor de Ciências. Envolvendo dois jogadores, o objetivo é chegar ao final do tabuleiro com a ajuda de um dado virtual e, em se parando em determinados lugares, o jogador deverá responder a uma pergunta envolvendo conhecimentos sobre \textit{Misturas Homogêneas e Heterogêneas} e sobre \textit{Estados Físicos da Matéria} (vide figura \ref{tabule}).
+Um segundo trabalho produzido por alunos de anos iniciais a ser destacado é um jogo de tabuleiro que envolve um questionário estimulado pelo professor de Ciências. Envolvendo dois jogadores, o objetivo é chegar ao final do tabuleiro com a ajuda de um dado virtual e, em se parando em determinados lugares, o jogador deverá responder a uma pergunta envolvendo conhecimentos sobre \textit{Misturas Homogêneas e Heterogêneas} e sobre \textit{Estados Físicos da Matéria} (vide Figura \ref{tabule}).
 
 \begin{figure}[H]
 
@@ -1138,7 +1151,7 @@ Um segundo trabalho produzido por alunos de anos iniciais a ser destacado é um 
 
 Para este jogo foram utilizados três \textit{Sprites} (personagens) programáveis: dois que representam os jogadores e o dado que é usado para o movimento no tabuleiro. Ao analisar a programação de cada um desses personagens, pode-se perceber características interdisciplinares relevantes além do conteúdo trabalhado diretamente pelo professor de Ciências.
 
-A programação do dado inclui porcentagem, localização em um plano cartesiano e, apesar de ainda não calcular probabilidades, o aluno já tem contato com números e experimentos aleatórios (vide figura \ref{dado})
+A programação do dado inclui porcentagem, localização em um plano cartesiano e, apesar de ainda não calcular probabilidades, o aluno já tem contato com números e experimentos aleatórios (vide Figura \ref{dado})
 
 \begin{figure}[H]
 
@@ -1151,7 +1164,7 @@ A programação do dado inclui porcentagem, localização em um plano cartesiano
     
 \end{figure}
 
-A programação dos outros dois personagens além de incluir porcentagem e localização no plano cartesiano, tem também a movimentação nos eixos x e y do plano usando números positivos e negativos para orientar em qual direção esses personagens irão se movimentar (vide figura \ref{progtab}).
+A programação dos outros dois personagens além de incluir porcentagem e localização no plano cartesiano, tem também a movimentação nos eixos x e y do plano usando números positivos e negativos para orientar em qual direção esses personagens irão se movimentar (vide Figura \ref{progtab}).
 
 \begin{figure}[H]
 
